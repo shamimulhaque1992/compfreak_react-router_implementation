@@ -1,0 +1,29 @@
+.review {
+  width: 300px;
+  height: 510px;
+  border: 1px solid #95a0a7;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 auto;
+}
+.review img {
+  width: 286px;
+  height: 286px;
+  border-radius: 8px;
+  margin: 7px;
+}
+.review-info {
+  margin: -10px 14px;
+}
+.review-info p {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.review-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  margin-top: 7px;
+}
