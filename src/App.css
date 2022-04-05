@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+body{
+  overflow:overlay;
+}
+.acordion-container{
+  z-index: 0;
+}
+.nav{
+  z-index: 2;
+  /* background: rgba(199, 210, 254, 0.3); */
+}

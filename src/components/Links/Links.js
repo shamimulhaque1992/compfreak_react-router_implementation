@@ -5,8 +5,8 @@ const Links = (props) => {
   const { name, link } = props.route;
   return (
     <div>
-      <li className='mr-16'>
-        <Link to={link}>{name}</Link>
+      <li className='mr-10 pt-2'>
+        <Link className='text-decoration-none text-black text-uppercase' to={link}>{name}</Link>
       </li>
     </div>
   );

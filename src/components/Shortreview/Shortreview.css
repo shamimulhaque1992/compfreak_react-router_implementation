@@ -7,13 +7,14 @@
   margin: 0 auto;
 }
 .review img {
-  width: 286px;
-  height: 286px;
-  border-radius: 8px;
-  margin: 7px;
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 .review-info {
-  margin: -10px 14px;
+  margin: 30px 14px;
 }
 .review-info p {
   margin-bottom: 0;
@@ -26,4 +27,22 @@
   font-size: 21px;
   line-height: 25px;
   margin-top: 7px;
+}
+.btn-cart {
+  width: 100%;
+  background: #ffe0b3;
+  border: none;
+  border-radius: 0px 0px 8px 8px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+.btn-cart:hover {
+  background-color: rgb(245, 192, 94);
+  transition: all 0.5s;
 }
