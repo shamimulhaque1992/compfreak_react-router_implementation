@@ -19,7 +19,7 @@ const Navbar = () => {
         {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
       </div>
       <ul
-        className={`md:flex justify-center items-center absolute md:static w-full bg-indigo-200 duration-500 ease-in ${
+        className={`md:flex justify-center bg-indigo-200 items-center absolute md:static w-full duration-500 ease-in ${
           open ? "top-5" : "top-[-220px]"
         }`}
       >

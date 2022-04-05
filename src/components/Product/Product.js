@@ -1,4 +1,5 @@
 import React from "react";
+import "./Product.css"
 
 const Product = () => {
   return (
@@ -6,7 +7,16 @@ const Product = () => {
       <div className="productDescripton w-5/12 mr-5 text-left">
         <h1 className="text-4xl">Alienware AW3423DW gaming monitor</h1>
         <h1 className="text-3xl">24 inc 144hz ips lcd panel</h1>
-        <p>
+        <p className="product-text" title="OLED gaming
+          panel to PC. For years, you've had to deal with IPS and LCD screens
+          while televisions and phones started incorporating OLED technology
+          into their construction. Now, we can finally recommend an outstanding OLED gaming monitor.The Alienware AW3423DW gaming monitor
+          boasts Samsung's new QD-LED tech that combines an ideal RGB subpixel
+          structure with quantum dot technology. This produces both excellent
+          color saturation and brighter pixels without any loss in clarify for
+          things like fonts. In other words: this monitor brings 99.3% coverage
+          of DCI-P3 color space and 1,000 nits brightness for a portion of the
+          panel. The HDR on this thing is unparalleled.">
           Alienware delivered the first legitimately impressive OLED gaming
           panel to PC. For years, you've had to deal with IPS and LCD screens
           while televisions and phones started incorporating OLED technology
@@ -18,17 +28,7 @@ const Product = () => {
           things like fonts. In other words: this monitor brings 99.3% coverage
           of DCI-P3 color space and 1,000 nits brightness for a portion of the
           panel. The HDR on this thing is unparalleled.
-          <br /> Combine that with a solid 175Hz refresh rate and a 0.1ms
-          response time and this thing is hands down the best monitor for gaming
-          right now. If you regularly play fast-paced competitive games or even
-          if you want to chill out and explore Elden Ring, this monitor will
-          keep up.
-          <br /> One of the big concerns with OLED panels is burn-in. Here, the
-          monitor is overprovisioned with extra pixels to shift the display over
-          a few to prevent static images. It also has an ABL (Automatic
-          Brightness Limiter), which causes the whole panel to dim when there's
-          a bright object. It's not super noticeable, but it's part of the
-          trade-off when going OLED.
+          
         </p>
         <div className="details flex justify-around">
           <div className="">

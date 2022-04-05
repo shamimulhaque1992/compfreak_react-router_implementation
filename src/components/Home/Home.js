@@ -18,11 +18,13 @@ const Home = () => {
           <Shortreview key={review.id} review={review} />
         ))}
       </div>
-      <Link to="/review">
-        <button className="bg-sky-600 hover:bg-sky-700 px-7 my-10 rounded-md text-white">
-          See all reviews
-        </button>
-      </Link>
+      <div className="text-center">
+        <Link to="/review">
+          <button className="bg-sky-600 hover:bg-sky-700 px-7 my-10 rounded-md text-white">
+            See all reviews
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };

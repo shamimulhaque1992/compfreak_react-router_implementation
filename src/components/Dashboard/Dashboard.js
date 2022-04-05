@@ -26,7 +26,7 @@ const Dashboard = () => {
       .then((data) => setChartData(data));
   }, []);
   return (
-    <div className="charts border-2">
+    <div className="charts">
       <div className="flex items-center">
         <h1 className="text-xl">Area Chart: Income Vs Sells Vs Revinue</h1>
         <img

@@ -6,7 +6,6 @@ Live site link: [CompFreak](https://bespoke-marshmallow-065bd8.netlify.app/).
 
 Khondoker Shamimul Haque
 
-### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -23,4 +22,15 @@ You may also see any lint errors in the console.
 * Accordion of bootstrap is used to show some basic question answers.
 * Made some fake data to show fake review.
 
+## Learn More
+
+### `Language Used`
+#### JavaScript
+
+### `Framework Used`
+#### React.js
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
 
