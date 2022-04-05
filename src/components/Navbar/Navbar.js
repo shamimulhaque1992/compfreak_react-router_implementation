@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       <ul
         className={`md:flex justify-center items-center absolute md:static w-full bg-indigo-200 duration-500 ease-in ${
-          open ? "top-6" : "top-[-220px]"
+          open ? "top-5" : "top-[-220px]"
         }`}
       >
         {routes.map((route) => (

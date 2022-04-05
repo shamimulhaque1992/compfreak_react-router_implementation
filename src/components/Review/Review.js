@@ -6,7 +6,7 @@ const Review = () => {
     const [reviews, setReviews] = useReviews();
   return (
     <div>
-      <h1 className="text-5xl">Reviews</h1>
+      <h1 className="text-2xl text-center">Reviews</h1>
       <div className="review-container">
         {reviews.map((review) => (
           <Shortreview key={review.id} review={review} />

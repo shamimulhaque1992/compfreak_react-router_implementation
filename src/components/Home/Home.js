@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <Product></Product>
-      <h1 className="text-5xl">Reviews</h1>
+      <h1 className="text-2xl text-center">Reviews</h1>
       <div className="review-container">
         {reviews.slice(0, 3).map((review) => (
           <Shortreview key={review.id} review={review} />

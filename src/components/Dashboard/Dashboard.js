@@ -26,17 +26,18 @@ const Dashboard = () => {
       .then((data) => setChartData(data));
   }, []);
   return (
-    <div className="charts">
-      <div className="flex items-center p-10">
-        <h1 className="p-10">Area Chart</h1>
+    <div className="charts border-2">
+      <div className="flex items-center">
+        <h1 className="text-xl">Area Chart: Income Vs Sells Vs Revinue</h1>
         <img
           className="w-1 m-10"
           src="https://www.seekpng.com/png/small/106-1062598_vertical-line-transparent-white-vertical-line-png.png"
           alt=""
         />
+
         <AreaChart
-          className="my-11"
-          width={530}
+          className="my-11 area"
+          width={400}
           height={250}
           data={chartData}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
@@ -59,6 +60,7 @@ const Dashboard = () => {
           <YAxis dataKey="investment" />
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
+          <Legend />
           <Area
             type="monotone"
             dataKey="investment"
@@ -82,15 +84,15 @@ const Dashboard = () => {
           />
         </AreaChart>
       </div>
-
-      <div className="flex items-center p-10">
-        <h1 className="p-10">Area Chart</h1>
+      <div className="flex items-center">
+        <h1 className="text-xl">BarChart: Income Vs Sell Vs Revinue</h1>
         <img
           className="w-1 m-10"
           src="https://www.seekpng.com/png/small/106-1062598_vertical-line-transparent-white-vertical-line-png.png"
           alt=""
         />
-        <BarChart width={530} height={250} data={chartData}>
+
+        <BarChart width={400} height={250} data={chartData}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
           <YAxis dataKey="investment" />
@@ -101,14 +103,17 @@ const Dashboard = () => {
           <Bar dataKey="revenue" fill="#cab482" />
         </BarChart>
       </div>
-      <div className="flex items-center p-10">
-        <h1 className="p-10">Area Chart</h1>
+      <div className="flex items-center ">
+        <h1 className="text-xl">
+          ComposedChart: Income Vs Sell Vs Revinue
+        </h1>
         <img
           className="w-1 m-10"
           src="https://www.seekpng.com/png/small/106-1062598_vertical-line-transparent-white-vertical-line-png.png"
           alt=""
         />
-        <ComposedChart width={530} height={250} data={chartData}>
+
+        <ComposedChart width={400} height={250} data={chartData}>
           <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
@@ -124,17 +129,19 @@ const Dashboard = () => {
           <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
         </ComposedChart>
       </div>
-      <div className="flex items-center p-10">
-        <h1 className="p-10">Area Chart</h1>
+      <div className="flex items-center ">
+        <h1 className="text-xl">RadarChart: Income Vs Sell Vs Revinue</h1>
         <img
           className="w-1 m-10"
           src="https://www.seekpng.com/png/small/106-1062598_vertical-line-transparent-white-vertical-line-png.png"
           alt=""
         />
-        <RadarChart outerRadius={90} width={530} height={250} data={chartData}>
+
+        <RadarChart outerRadius={90} width={400} height={250} data={chartData}>
           <PolarGrid />
-          <PolarAngleAxis dataKey="subject" />
+          <PolarAngleAxis dataKey="month" />
           <PolarRadiusAxis angle={30} domain={[0, 150]} />
+          <Tooltip />
           <Radar
             name="investment"
             dataKey="investment"

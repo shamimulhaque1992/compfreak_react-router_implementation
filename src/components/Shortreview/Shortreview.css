@@ -41,8 +41,23 @@
   cursor: pointer;
 }
 
-
 .btn-cart:hover {
   background-color: rgb(245, 192, 94);
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 1640px) {
+  .review-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .review {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .review {
+    width: 90%;
+  }
 }
