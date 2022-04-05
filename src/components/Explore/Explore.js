@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const Explore = () => {
-    return (
-        <div>
-            <h1>Explore</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1 className="text-center">Explore</h1>
+    </div>
+  );
 };
 
 export default Explore;
